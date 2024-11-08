@@ -1,7 +1,7 @@
  import React from 'react';
 import { Button } from '../ui/button';
-import { Input } from '../ui/Input';
-import { Card } from '../ui/Card';
+import { Input } from '../ui/input';
+import { Card } from '../ui/card';
 import '../../index.css';
 import useLogin from '@/hooks/useLogin';
 import { useNavigate } from 'react-router-dom';
