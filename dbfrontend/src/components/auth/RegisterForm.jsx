@@ -1,6 +1,6 @@
 // RegisterForm.jsx
 import React from 'react';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { Input } from '../ui/Input';
 import { Card } from '../ui/Card';
 import useForm from '../../hooks/useForm'; // Ensure the path is correct

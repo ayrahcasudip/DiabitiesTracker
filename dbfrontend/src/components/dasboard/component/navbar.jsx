@@ -11,7 +11,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Bell, User, LogOut, Menu, X, ArrowLeft } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import photo from './photo.jpg';
+import photo from './image.png';
 
 const DiabetesTrackerNavbar = ({ showProfileMenu, showBackButton = true }) => {
   const navigate = useNavigate();
@@ -100,7 +100,7 @@ const DiabetesTrackerNavbar = ({ showProfileMenu, showBackButton = true }) => {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="relative h-8 w-8 rounded-full">
                 <Avatar className="h-8 w-8">
-                  <AvatarImage src={photo} alt="User" />
+                  <AvatarImage src={photo} alt="User"  className='object-cover'/>
                   <AvatarFallback>U</AvatarFallback>
                 </Avatar>
               </Button>
