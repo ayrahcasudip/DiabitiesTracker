@@ -86,7 +86,7 @@ const DiabetesDashboar = () => {
       }
 
       try {
-        const response = await fetch(`http://localhost:3000/user/getdata/${userId}`);
+        const response = await fetch(`https://diabities-tracker-api.vercel.app//user/getdata/${userId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
