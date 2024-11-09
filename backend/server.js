@@ -1,12 +1,10 @@
-import express from "express"
-import 'dotenv/config'
-import register from "./routes/userRoute.js"
-import connectDb from "./config/dbConnection.js"
-const app = express()
-
-const PORT = process.env.PORT;
-
+import express from 'express';
+import 'dotenv/config';
+import register from './routes/userRoute.js';
+import connectDb from './config/dbConnection.js';
 import cors from 'cors';
+
+const app = express();
 
 const allowedOrigin = "https://diabetes-tracker-black.vercel.app";
 
@@ -19,11 +17,11 @@ app.use(cors({
 connectDb();
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("Hello world")
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
 
-})
+app.use('/user', register);
 
-app.use('/user', register)
-
-
+// Export Express app as a serverless function for Vercel
+export default app;
