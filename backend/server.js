@@ -23,7 +23,4 @@ app.get("/",(req,res)=>{
 
 app.use('/user', register)
 
-app.listen(PORT,()=>{
-    console.log(`Running over the${PORT}`);
-    
-})
+
