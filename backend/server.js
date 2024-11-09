@@ -6,7 +6,7 @@ import cors from 'cors';
 
 const app = express();
 
-const allowedOrigin = "https://diabetes-tracker-black.vercel.app";
+const allowedOrigin = "https://diabetes-tracker-black.vercel.app/";
 
 app.use(cors({
   origin: allowedOrigin,  // Allow requests only from your frontend URL
