@@ -9,7 +9,7 @@ const useDiabetes = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3000/diabetes', {
+      const response = await fetch('https://diabities-tracker-api.vercel.app/diabetes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
