@@ -19,7 +19,7 @@ const useForm = () => {
     console.log("handleSubmit fired with data:", formData);
   
     try {
-      const response = await fetch('https://diabities-tracker-api.vercel.app/user/register', {
+      const response = await fetch('https://diabities-tracker-fgxfguqjz-saugatifys-projects.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
